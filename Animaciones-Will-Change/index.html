@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Animaciones Sintaxis</title>
+  <style>
+    body {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      height: 100vh;
+      color: white;
+      font-family: Arial;
+    }
+
+    .container {
+      border: 1px solid red;
+      width: 100%;
+    }
+
+    .container:hover .cuadrado {
+      animation-play-state: paused;
+
+    }
+
+    .cuadrado {
+      width: 200px;
+      height: 200px;
+      background: red;
+      margin: 20px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      display: flex;
+      transition: .3s;
+      transition: 3s;
+      will-change: opacity, transform;
+    }
+    .cuadrado:hover {
+      opacity: 0;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="cuadrado" id="cuadrado">HOLA MUNDO</div>
+  </div>
+</body>
+
+</html>
